@@ -80,7 +80,7 @@ public class UserServiceIntegrationTests : IDisposable
             Name = "test",
             Email = "test@mail.com",
             Role = "User",
-            PasswordHash = "existing_hash" // ✅ FIX
+            PasswordHash = "existing_hash" 
         });
 
         await _db.SaveChangesAsync();
@@ -104,7 +104,7 @@ public class UserServiceIntegrationTests : IDisposable
             Name = "A",
             Email = "a@mail.com",
             Role = "User",
-            PasswordHash = "hash" // ✅ FIX
+            PasswordHash = "hash"
         });
 
         await _db.SaveChangesAsync();
@@ -126,7 +126,7 @@ public class UserServiceIntegrationTests : IDisposable
             Name = "test",
             Email = "test@mail.com",
             Role = "User",
-            PasswordHash = "hash" // ✅ FIX
+            PasswordHash = "hash" 
         };
 
         _db.Users.Add(user);
@@ -149,7 +149,7 @@ public class UserServiceIntegrationTests : IDisposable
             Name = "test",
             Email = "test@mail.com",
             Role = "User",
-            PasswordHash = "hash" // ✅ FIX
+            PasswordHash = "hash" 
         });
 
         await _db.SaveChangesAsync();
