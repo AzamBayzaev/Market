@@ -31,15 +31,15 @@ public class VerificationCodeServiceIntegrationTests : IDisposable
             NullLogger<VerificationCodeService>.Instance);
     }
 
-    // 🔥 FIX: теперь создаём пользователя корректно
+   
     private async Task<UserEntity> CreateUserAsync()
     {
         var user = new UserEntity
         {
             UserId = 1,
             Email = "test@mail.com",
-            Name = "Test User",              // FIX
-            PasswordHash = "hashed_password", // FIX
+            Name = "Test User",              
+            PasswordHash = "hashed_password", 
             IsVerified = false
         };
 
